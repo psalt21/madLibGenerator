@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mad Lib Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id=story-box>
+
+    </div>
+    <div id="generator">
+      <h1>MAD LIB GENERATOR</h1>
+      <p id="explanation">
+        Ever heard of MadLibs? Mad Libs is a phrasal template word game where one player prompts others for a list of words to substitute for blanks in a story, before reading the - often comical or nonsensical - story aloud. The game is frequently played as a party game or as a pastime. The game was invented in the United States, and more than 110 million copies of Mad Libs books have been sold since the series was first published in 1958. Follow this link for more information: <a href="http://en.wikipedia.org/wiki/Mad_Libs" target="_blank">wikipedia.org/wiki/Mad_Libs</a>
+      </p>
+      <div>
+
+          <label>NOUNS:
+            <input type="text" id="noun" title="Enter up to 4 nouns separated by commas" placeholder="noun, noun, noun, noun">
+          </label><br>
+          <label>ADJECTIVES:
+            <input type="text" id="adjective" title="Enter up to 4 adjectives separated by commas" placeholder="adjective, adjective, adjective, adjective">
+          </label><br>
+          <label>ADVERBS:
+            <input type="text" id="adverb" title="Enter up to 4 adverbs separated by commas" placeholder="adverb, adverb, adverb, adverb">
+          </label><br>
+          <label>VERBS:
+            <input type="text" id="verb" title="Enter up to 4 verbs separated by commas" placeholder="verbs, verbs, verbs, verbs">
+          </label>
+          <br><br>
+
+          <div id="story-options">
+            <h3>CHOOSE YOUR STORY'S THEME</h3>
+            <input id="christmas" type="radio" name="theme"><label>Christmas</label>
+            <input id="shopping" type="radio" name="theme"><label>Shopping</label>
+            <input id="brainstorm" type="radio" name="theme"><label>Brainstorm</label>
+          </div>
+
+            <button onclick="generateStory()" type="submit" id="generate" name="Generate List">GENERATE STORY</button>
+
+      </div>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
